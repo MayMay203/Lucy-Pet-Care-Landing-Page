@@ -3,7 +3,9 @@
 }
 
 :root{
-    --font-heading: 'Sora','san-serif'
+    --font-heading: 'Sora','san-serif';
+    --text-color: #656689;
+    --heading-text-color: #000958;
 }
 
 html, body{
@@ -15,6 +17,73 @@ html{
 }
 
 body{
-    font-size: 16rem;
+    font-size: 1.6rem;
     font-family: 'Poppins', sans-serif;
 }
+
+/* Common */
+.container{
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+/* Header */
+
+.header{
+    padding: 34px 0 8px;
+    background-color: #fff;
+}
+
+.header--fixed{
+    position: sticky;
+    top: -26px;
+}
+
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-list{
+    display: flex;
+}
+
+.navbar__link{
+    padding: 8px 18px;
+    color: #5E6085;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1;
+    text-decoration: none;
+}
+
+.navbar__link--active,
+.navbar__link:hover{
+    text-shadow: 1px 0 0;
+    color: var(--heading-text-color);
+}
+
+.signup-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 117px;
+    height: 50px;
+    color: var(--heading-text-color);
+    text-align: center;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    border: 1px solid var(--heading-text-color);
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.signup-btn:hover{
+    opacity: 0.7;
+}
+
