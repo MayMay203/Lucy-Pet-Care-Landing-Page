@@ -482,7 +482,7 @@ body{
 .about-media__decor{
     position: absolute;
     top: 157px;
-    right: -51px;
+    right: -46px;
     z-index: -2;
 }
 
@@ -637,9 +637,6 @@ body{
 .service{
     margin-top: 130px;
     background-color: #FFF6ED;
-}
-
-.service__inner{
     padding: 68px 0 100px;
 }
 
@@ -739,4 +736,112 @@ body{
     bottom: 0;
     right: 12px;
     border-radius: 8px;
+}
+
+.staff{
+    padding: 130px 0;
+}
+
+.staff-top{
+    text-align: center;
+}
+
+.staff__heading{
+    margin: 15px 0 59px 0;
+}
+
+.staff__list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 37px;
+    margin-bottom: 48px;
+}
+
+.staff__item{
+    text-align: center;
+}
+
+.staff__img-wrap{
+    border-radius: 130px;
+    margin: 0 16px;
+    position: relative;
+}
+
+.staff__img-wrap::before{
+    content: "";
+    width: 100%;
+    height: 94%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #90CCFF 0%, #59A8EB 95.96%);
+    border-radius: inherit;
+}
+
+.staff__img-wrap::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: calc(100% + 36px);
+    height: 100%;
+    background-size: 100%;
+}
+
+.staff__item:nth-child(1) .staff__img-wrap::after{
+    background-image: url(../img/staff-decor-01.svg);
+}
+
+.staff__item:nth-child(2) .staff__img-wrap::before{
+    background: linear-gradient(180deg, #FF997E 0%, #F3752E 100%);
+}
+
+.staff__item:nth-child(2) .staff__img-wrap::after{
+    background-image: url(../img/staff-decor-02.svg);
+}
+
+.staff__item:nth-child(3) .staff__img-wrap::before{
+    background: linear-gradient(180deg, #FABF3E 0%, #FFA14A 100%);
+}
+
+.staff__item:nth-child(3) .staff__img-wrap::after{
+    background-image: url(../img/staff-decor-03.svg);
+}
+
+.staff__item:nth-child(4) .staff__img-wrap::before{
+    background: linear-gradient(180deg, #5BD6E2 0%, #00A7CC 100%);
+}
+
+.staff__item:nth-child(4) .staff__img-wrap::after{
+    background-image: url(../img/staff-decor-04.svg);
+}
+
+.staff__item:nth-child(even) .staff__img-wrap::after{
+    background-position: 0 16px;
+}
+
+
+.staff__img{
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+.staff__item-desc{
+    margin: 29px 0 14px;
+}
+
+.staff__btn{
+    height: 56px;
+}
+
+.staff__action{
+    display: flex;
+    justify-content: center;
 }
