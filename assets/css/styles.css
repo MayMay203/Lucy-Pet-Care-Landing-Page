@@ -1143,7 +1143,7 @@ body{
 }
 
 .blog{
-    padding: 78px 0 131px
+    padding: 78px 0 52px
 }
 
 .blog-top{
@@ -1214,4 +1214,133 @@ body{
 
 .blog-item__desc{
     margin-top: 16px;
+}
+
+.footer{
+    margin-top: 52px;
+    background: linear-gradient(to right, #FFF6ED 42%, #FFFAF5 42%)
+}
+
+.footer__inner{
+    display: flex;
+}
+
+.footer-left{
+    padding: 114px 0 148px 0;
+    width: 42%;
+}
+
+.search-form{
+    margin: 40px 0 68px 0;
+    width: 268px;   
+    height: 46px;
+    position: relative;
+}
+
+.search-form__input{
+    width: 100%;
+    padding: 15px 22px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    opacity: 0.6;
+    background: #FFF;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.16;
+    outline: none;
+}
+
+.search-form__submit{
+    position: absolute;
+    inset: 0 0 0 auto;
+    width: 45px;
+    height: 46px;
+    border-radius: 100%;
+    background-color: var(--orange);
+    border: none;
+}
+
+.search-form__submit:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+
+.footer-right{
+    background-color: #FFFAF5;
+}
+
+.footer__heading{
+    color: var(--dark-blue);
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.11;
+    margin-bottom: 16px;
+}
+
+.footer__socials{
+    display: grid;
+    grid-template-columns: repeat(4, 32px);
+    grid-template-rows: 32px;
+    column-gap: 16px;
+}
+
+.footer__social-icon{
+    width: 12px;
+    height: 12px;
+}
+
+.footer__social-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: inline-block;
+    border-radius: 100%;
+    background-color: #fff;
+    border: none;
+}
+
+.footer__social-btn:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.footer-right__content{
+    padding: 52px 0 52px 129px;
+    display: flex;
+    column-gap: 137px;
+}
+
+.footer__link{
+    color: var(--text-color);
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2;
+    text-decoration: none;
+}
+
+.footer__column:first-child .footer__list:nth-of-type(1){
+    margin-bottom: 86px;
+}
+
+.footer__column:last-child .footer__list:nth-of-type(1){
+    margin-bottom: 58px;
+}
+
+.footer__heading{
+    margin-bottom: 14px;
+}
+
+.copy-right{
+    color: var(--text-color);
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.16;
+    padding-left: 22px;
 }
