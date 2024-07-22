@@ -999,3 +999,145 @@ body{
     content: url(../icons/Check.svg);
     margin-right: 12px;
 }
+
+.review{
+    padding: 104px 0 104px;
+}
+
+.review__control{
+    color: var(--orange);
+    width: 54px;
+    height: 54px;
+    border-radius: 50%;
+    border: 1px solid #FFD1C4;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.review__control:nth-of-type(2){
+    margin-left: auto;
+}
+
+.review__control:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: #FF5B2E;
+    box-shadow: 0px 5px 27px 0px rgba(255, 91, 46, 0.30);
+}
+
+.review__inner{
+    display: flex;
+    align-items: center;
+    column-gap: 44px;
+}
+
+.review-item{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    transition: transform .3s ease;
+}
+
+.review-item__content{
+    margin-top: 28px;
+}
+
+.review-item__img-wrap{
+    width: 274px;
+    height: 427px;
+    border-radius: 137px;
+    position: relative;
+    margin-top: -52px;
+}
+
+.review-item__img{
+    width: 274px;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.review-item__img-wrap::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 82%;
+    border-radius: inherit;
+    background: #FFDA54;
+}
+
+
+.review-item__desc{
+    display: inline-block;
+    width: 553px;
+    margin-top: 24px;
+    color: #000;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.56;
+}
+
+.review-item__cite{
+    margin-top: 34px;
+    color: #282828;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+}
+
+.review-item__cite::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin-right: 8px;
+    border-radius: 1px;
+}
+
+.review__dots{
+    display: flex;
+    column-gap: 8px;
+    margin-top: 56px;
+    justify-content: center;
+}
+
+.review__dot{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-radius: 4px;
+    border: 1px solid var(--orange);
+    cursor: pointer;
+}
+
+.review__dot:hover{
+    background-color: var(--orange);
+}
+
+.review__dot--active{
+    width: 24px;
+    border-radius: 4px;
+    background: var(--orange);
+    cursor: default;
+}
+
+.review__content{
+    overflow: hidden;
+}
+
+.review__list{
+    display: flex;
+}
